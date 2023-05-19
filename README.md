@@ -1,2 +1,2 @@
 # take-home-assessment
-Take home assessments covering areas within CSP engineering. 
+Take home assessment for Cengage Computer Science discipline
