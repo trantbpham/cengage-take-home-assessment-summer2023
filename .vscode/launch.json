@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Java1_2",
+            "request": "launch",
+            "mainClass": "Java1_2",
+            "projectName": "take-home-assessment_ade36c37"
+        },
+        {
+            "type": "java",
+            "name": "Java1_1",
+            "request": "launch",
+            "mainClass": "Java1_1",
+            "projectName": "take-home-assessment_ade36c37"
+        },
+        {
+            "type": "java",
+            "name": "ChallengeTwo",
+            "request": "launch",
+            "mainClass": "ChallengeTwo",
+            "projectName": "take-home-assessment_ade36c37"
+        },
+        {
+            "type": "java",
+            "name": "Hello",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "take-home-assessment_ade36c37"
+        },
+        {
+            "type": "java",
+            "name": "Program",
+            "request": "launch",
+            "mainClass": "Program",
+            "projectName": "take-home-assessment_ade36c37"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
