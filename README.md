@@ -12,7 +12,7 @@ Fork the repository to your GitHub account and follow the instructions listed be
 
 Part 1 consists of 9 exercises broken into two different types (1 sets of 6 and 1 set of 3) provided in 3 different programming languages (3 C++, 3 Java, 3 Python).
 
-The first set of 6 challenges consists of a working program and program requirements. Write test cases for 4 of the 6 challenges (2 of the 3 languages). The test cases must verify the program works according to the program requirements.
+The first set of 6 challenges consists of a working program and program requirements. **Our Ask:** Write test cases for 4 of the 6 challenges (2 of the 3 languages). The test cases must verify the program works according to the program requirements.
 
 The second set of challenges consists of test cases. Write a program that conforms to the test case requirements in 2 of the 3 languages. 
 
@@ -20,7 +20,7 @@ The second set of challenges consists of test cases. Write a program that confor
 
 ### Instructions
 
-Part 2 provides 3 working python scripts. They are the same script written three different ways along with a single set of test cases for all three. Write a script or program that verifies how well the test cases assess each of the programs provided.
+Part 2 provides 3 working python scripts. These are the same script written three different ways, along with a single set of test cases for all three. **Our Ask:** Write a script to verify how well the test cases assess each of the 3 Python programs provided to see how many and which test case passed/failed.
 
 > Not all the scripts will pass the test cases 100%, this is expected. 
 
