@@ -28,4 +28,3 @@ The test cases can be modified to better conform to your script or program, but 
 
 The overall objective is to determine how well the test cases have been implemented to cover various implementations of a single program (a test on the test cases) to discover edge cases or gaps in the testing coverage. Determine a suitable mechanism for communicating which program file has failed, and why. 
 =======
-# take-home-assessment
