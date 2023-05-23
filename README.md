@@ -27,3 +27,5 @@ Part 2 provides 3 working python scripts. These are the same script written thre
 The test cases can be modified to better conform to your script or program, but the underlying test logic should not be modified as they relate to the programs provided by the challenge. In other words, some of the test cases may fail when running against the provided programs, this can be considered expected. Should you develop a script or program that requires a structurally different approach or testing architecture, the test cases can be modified to conform to your requirements, but their pass or failure rate should remain the same. 
 
 The overall objective is to determine how well the test cases have been implemented to cover various implementations of a single program (a test on the test cases) to discover edge cases or gaps in the testing coverage. Determine a suitable mechanism for communicating which program file has failed, and why. 
+=======
+# take-home-assessment
