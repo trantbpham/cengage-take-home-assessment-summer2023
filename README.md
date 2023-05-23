@@ -4,7 +4,7 @@
 
 ## Instructions
 
-Fork the repository to your GitHub account and follow the instructions listed below. When you have completed your work, open a pull request to this repository, [Take Home Assessment](https://github.com/internal-CSP-HES-engineering/take-home-assessment), to submit. When opening the pull request or creating your branch name include your last name. Please include any details or instructions required to verify your work, such as packages, libraries, environment, versions, tools, etc. Feel free to include additional explanations of your work.
+Fork the repository to your GitHub account and follow the instructions listed below. When you have completed your work, open a pull request to this repository, [Take Home Assessment](https://github.com/internal-CSP-HES-engineering/take-home-assessment), to submit. When opening the pull request or creating your branch name include your **last name**. Please include any details or instructions required to verify your work, such as packages, libraries, environment, versions, tools, etc. Feel free to include additional explanations of your work.
 
 ## Part 1
 
