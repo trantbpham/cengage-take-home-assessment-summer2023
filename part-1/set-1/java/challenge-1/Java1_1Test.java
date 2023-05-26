@@ -17,8 +17,7 @@ public class Java1_1Test {
     @Test
     public void printStatementTests(){
         Java1_1.main(null);
-        Assert.assertEquals("I am learning to program in Java\r\nThat's awesome!", outputStreamCaptor.toString()
-      .trim());
+        Assert.assertEquals("I am learning to program in Java\r\nThat's awesome!", outputStreamCaptor.toString().trim());
     }
 
     @AfterEach
