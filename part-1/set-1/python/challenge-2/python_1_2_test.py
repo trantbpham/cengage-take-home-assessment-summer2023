@@ -2,8 +2,9 @@ import unittest
 import io
 import sys
 import contextlib
-from python_1_2 import Python_1_2
+import python_1_2
 
+# Note: a couple of the tests fail, commented where needed
 class PythonSet1Challenge2Test(unittest.TestCase):
 
     def test_print_message(self):
@@ -21,7 +22,7 @@ class PythonSet1Challenge2Test(unittest.TestCase):
         self.test_print_message_helper("1.2", 1.2)
 
     def test_multiply_numbers(self):
-        instance = Python_1_2()
+        instance = python_1_2.Python_1_2()
 
         # multiply by 0
         self.assertEqual(0, instance.multiply_numbers(0, 0))
@@ -42,12 +43,12 @@ class PythonSet1Challenge2Test(unittest.TestCase):
         # multiply by arbitrarilly large numbers
         self.assertEqual(95378247708541418748648, instance.multiply_numbers(15421681351, 6184685413848))
         self.assertEqual(95378247708541418748648, instance.multiply_numbers(int(15421681351), int(6184685413848)))
-        # self.assertEqual(95378247708541418748648, instance.multiply_numbers(float(15421681351), int(6184685413848))) # fails, does not support large float
-        # self.assertEqual(95378247708541418748648, instance.multiply_numbers(float(15421681351), float(6184685413848))) # fails, does not support large float
+        self.assertEqual(95378247708541418748648, instance.multiply_numbers(float(15421681351), int(6184685413848))) # fails, does not support large float
+        self.assertEqual(95378247708541418748648, instance.multiply_numbers(float(15421681351), float(6184685413848))) # fails, does not support large float
 
     # helpers
     def test_print_message_helper(self, expected = "", input = None):
-        instance = Python_1_2() # create instance
+        instance = python_1_2.Python_1_2() # create instance
         out = io.StringIO() # capture
         input = input if input else expected # if input is not included assume input is expected
         with contextlib.redirect_stdout(out): # print to out

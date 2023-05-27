@@ -24,12 +24,6 @@ public class Java1_1Test {
         System.setOut(stdout);
     }
 
-    // should i???
-    @Test
-    public void testInstantiation() {
-
-    }
-
     @Test
     public void testMatchingOutput() {
         StringBuilder sb = new StringBuilder();
