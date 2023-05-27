@@ -10,7 +10,7 @@ class Python_1_1_test(unittest.TestCase):
         captured_output = StringIO()                 
         with redirect_stdout(captured_output):
             import python_1_1
-        self.assertEqual(captured_output.getvalue(), expected_output)
+        self.assertEqual(expected_output, captured_output.getvalue())
 
 if __name__ == '__main__':
     unittest.main()

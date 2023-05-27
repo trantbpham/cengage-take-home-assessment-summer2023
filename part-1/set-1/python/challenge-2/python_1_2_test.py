@@ -18,7 +18,7 @@ class Python_1_2_test(unittest.TestCase):
         with redirect_stdout(captured_output):
             self.python_example.print_message(message)
 
-        self.assertEqual(captured_output.getvalue(), expected_output)
+        self.assertEqual(expected_output, captured_output.getvalue())
 
     # This method tests multiply_numbers function using two positive numbers
     def test_multiply_numbers_1(self):
@@ -26,7 +26,7 @@ class Python_1_2_test(unittest.TestCase):
         num1 = 4
         num2 = 5.0
         result = self.python_example.multiply_numbers(num1, num2)
-        self.assertEqual(result, expected_output)
+        self.assertEqual(expected_output, result)
 
     # This method tests multiply_numbers function using one positive and one negative number.
     def test_multiply_numbers_2(self):
@@ -34,7 +34,7 @@ class Python_1_2_test(unittest.TestCase):
         num1 = -4
         num2 = 5.0
         result = self.python_example.multiply_numbers(num1, num2)
-        self.assertEqual(result, expected_output)
+        self.assertEqual(expected_output, result)
 
     # This method tests multiply_numbers function using two negative numbers.
     def test_multiply_numbers_3(self):
@@ -42,7 +42,7 @@ class Python_1_2_test(unittest.TestCase):
         num1 = -4
         num2 = -5.0
         result = self.python_example.multiply_numbers(num1, num2)
-        self.assertEqual(result, expected_output)
+        self.assertEqual(expected_output, result)
 
     # This method tests multiply_numbers function by multiplying with 0.
     def test_multiply_numbers_4(self):
@@ -50,7 +50,7 @@ class Python_1_2_test(unittest.TestCase):
         num1 = 0
         num2 = 2.4
         result = self.python_example.multiply_numbers(num1, num2)
-        self.assertEqual(result, expected_output)
+        self.assertEqual(expected_output, result)
 
 if __name__ == '__main__':
     unittest.main()
