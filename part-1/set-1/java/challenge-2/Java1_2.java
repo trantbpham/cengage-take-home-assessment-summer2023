@@ -26,5 +26,6 @@ public class Java1_2 {
         double num2 = scanner.nextDouble();
         double result = challenge.multiplyNumbers(num1, num2);
         System.out.println("The multiplication result is: " + result);
+        scanner.close();
     }
 }
