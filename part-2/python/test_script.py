@@ -18,10 +18,12 @@ class Test:
     # This method runs the test for the tester
     def run_test(self):
         out = io.StringIO()
+        print()
         print("---------------------------------------------------")
         print("Testing:", self.program_name, "\n")
         result_list = []
-
+        failed_descriptions = {}
+        
         # For each of the test cases, get its result
         for test_cases in self.suite:
             for test in test_cases:
@@ -36,6 +38,7 @@ class Test:
                 # Test failed
                 else:
                     result_list.append("Failed")
+                    failed_descriptions[test._testMethodName] = test_result.failures
                     self.failed_tests += 1
         print()
 
@@ -43,6 +46,9 @@ class Test:
         for i in range(0, len(result_list), 2):
             print(result_list[i])
             print(result_list[i+1])
+            # If the test failed, display why it failed
+            if(result_list[i+1] == "Failed"):
+                print(failed_descriptions[result_list[i]])
             print()
 
         # Print the test summary
@@ -55,7 +61,6 @@ class Test:
         if self.failed_tests == 0:
             print()
             print("All tests passed")
-        print()
         print()
 
 # main program
