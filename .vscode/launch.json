@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Java1_1",
+            "request": "launch",
+            "mainClass": "Java1_1",
+            "projectName": "murray-ctha_d6d3e6eb"
+        },
+        {
+            "type": "java",
             "name": "Java1_2",
             "request": "launch",
             "mainClass": "Java1_2",
