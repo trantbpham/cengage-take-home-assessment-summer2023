@@ -11,14 +11,25 @@ class Python_1_2_test(unittest.TestCase):
 
     # This method tests print_message function.
     def test_print_message(self):
-        expected_output = "This is a test message\n"
+        expected_output = "This is a test message"
         message = "This is a test message"
 
         captured_output = StringIO()   
         with redirect_stdout(captured_output):
             self.python_example.print_message(message)
 
-        self.assertEqual(expected_output, captured_output.getvalue())
+        self.assertEqual(expected_output, captured_output.getvalue().strip())
+
+    # This method tests print_message function with an empty input.
+    def test_print_message(self):
+        expected_output = ""
+        message = ""
+
+        captured_output = StringIO()   
+        with redirect_stdout(captured_output):
+            self.python_example.print_message(message)
+
+        self.assertEqual(expected_output, captured_output.getvalue().strip())
 
     # This method tests multiply_numbers function using two positive numbers
     def test_multiply_numbers_two_positive(self):

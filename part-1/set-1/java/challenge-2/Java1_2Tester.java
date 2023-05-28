@@ -12,10 +12,20 @@ public class Java1_2Tester {
     @Test
     public void testPrintMessage() {
         System.setOut(new PrintStream(outContent));
-        String expectedOutput = "This is a test message\n";
+        String expectedOutput = "This is a test message";
         javaExample.printMessage("This is a test message"); 
 
-        assertEquals(expectedOutput, outContent.toString());
+        assertEquals(expectedOutput, outContent.toString().trim());
+    }
+
+    // This method tests printMessage function with an empty input.
+    @Test
+    public void testPrintMessage_Empty() {
+        System.setOut(new PrintStream(outContent));
+        String expectedOutput = "";
+        javaExample.printMessage(""); 
+
+        assertEquals(expectedOutput, outContent.toString().trim());
     }
 
     // This method tests multiplyNumbers function using two positive numbers
