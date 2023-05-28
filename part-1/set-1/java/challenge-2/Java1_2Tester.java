@@ -20,7 +20,7 @@ public class Java1_2Tester {
 
     // This method tests multiplyNumbers function using two positive numbers
     @Test
-    public void testMultiplyNumbers_1() {
+    public void testMultiplyNumbers_TwoPositive() {
         int num1 = 3;
         double num2 = 4.0;
         double expectedOutput = 12.0;
@@ -30,7 +30,7 @@ public class Java1_2Tester {
 
     // This method tests multiplyNumbers function using one positive and one negative number.
     @Test
-    public void testMultiplyNumbers_2() {
+    public void testMultiplyNumbers_OnePositive_OneNegative() {
         int num1 = -3;
         double num2 = 4.0;
         double expectedOutput = -12.0;
@@ -40,7 +40,7 @@ public class Java1_2Tester {
 
     // This method tests multiplyNumbers function using two negative numbers.
     @Test
-    public void testMultiplyNumbers_3() {
+    public void testMultiplyNumbers_TwoNegative() {
         int num1 = -3;
         double num2 = -4.0;
         double expectedOutput = 12.0;
@@ -50,7 +50,7 @@ public class Java1_2Tester {
 
     // This method tests multiplyNumbers function by multiplying with 0.
     @Test
-    public void testMultiplyNumbers_4() {
+    public void testMultiplyNumbers_WithZero() {
         int num1 = 0;
         double num2 = -4.0;
         double expectedOutput = 0;

@@ -21,7 +21,7 @@ class Python_1_2_test(unittest.TestCase):
         self.assertEqual(expected_output, captured_output.getvalue())
 
     # This method tests multiply_numbers function using two positive numbers
-    def test_multiply_numbers_1(self):
+    def test_multiply_numbers_two_positive(self):
         expected_output = 20
         num1 = 4
         num2 = 5.0
@@ -29,7 +29,7 @@ class Python_1_2_test(unittest.TestCase):
         self.assertEqual(expected_output, result)
 
     # This method tests multiply_numbers function using one positive and one negative number.
-    def test_multiply_numbers_2(self):
+    def test_multiply_numbers_one_positive_one_negative(self):
         expected_output = -20
         num1 = -4
         num2 = 5.0
@@ -37,7 +37,7 @@ class Python_1_2_test(unittest.TestCase):
         self.assertEqual(expected_output, result)
 
     # This method tests multiply_numbers function using two negative numbers.
-    def test_multiply_numbers_3(self):
+    def test_multiply_numbers_two_negative(self):
         expected_output = 20
         num1 = -4
         num2 = -5.0
@@ -45,7 +45,7 @@ class Python_1_2_test(unittest.TestCase):
         self.assertEqual(expected_output, result)
 
     # This method tests multiply_numbers function by multiplying with 0.
-    def test_multiply_numbers_4(self):
+    def test_multiply_numbers_with_zero(self):
         expected_output = 0
         num1 = 0
         num2 = 2.4
