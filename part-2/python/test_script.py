@@ -38,7 +38,7 @@ class Test:
                 # Test failed
                 else:
                     result_list.append("Failed")
-                    failed_descriptions[test._testMethodName] = test_result.failures
+                    failed_descriptions[test._testMethodName] = str(test_result.failures[0][1])
                     self.failed_tests += 1
         print()
 
@@ -48,6 +48,7 @@ class Test:
             print(result_list[i+1])
             # If the test failed, display why it failed
             if(result_list[i+1] == "Failed"):
+                print("================")
                 print(failed_descriptions[result_list[i]])
             print()
 
