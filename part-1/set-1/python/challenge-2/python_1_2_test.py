@@ -2,6 +2,7 @@ import unittest
 from io import StringIO
 from contextlib import redirect_stdout
 from python_1_2 import Python_1_2
+import sys
 
 # This class tests the methods in python_1_2.py
 class Python_1_2_test(unittest.TestCase):
@@ -60,6 +61,22 @@ class Python_1_2_test(unittest.TestCase):
         expected_output = 0
         num1 = 0
         num2 = 2.4
+        result = self.python_example.multiply_numbers(num1, num2)
+        self.assertEqual(expected_output, result)
+
+    # This method tests multiplyNumbers function by multiplying two large numbers.
+    def test_multiply_numbers_positive_infinity(self):
+        expected_output = float("inf")
+        num1 = sys.maxsize
+        num2 = sys.float_info.max
+        result = self.python_example.multiply_numbers(num1, num2)
+        self.assertEqual(expected_output, result)
+
+    # This method tests multiplyNumbers function by multiplying with one min and one max number.
+    def test_multiply_numbers_negative_infinity(self):
+        expected_output = float("-inf")
+        num1 = -sys.maxsize-1
+        num2 = sys.float_info.max
         result = self.python_example.multiply_numbers(num1, num2)
         self.assertEqual(expected_output, result)
 

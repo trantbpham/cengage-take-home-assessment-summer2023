@@ -67,6 +67,26 @@ public class Java1_2Tester {
         double result = javaExample.multiplyNumbers(num1, num2);
         assertEquals(expectedOutput, result, 0);
     }
+
+    // This method tests multiplyNumbers function by multiplying two large numbers.
+    @Test
+    public void testMultiplyNumbers_PositiveInfinity() {
+        int num1 = Integer.MAX_VALUE;
+        double num2 = Double.MAX_VALUE;
+        double expectedOutput = Double.POSITIVE_INFINITY;
+        double result = javaExample.multiplyNumbers(num1, num2);
+        assertEquals(expectedOutput, result, 0);
+    }
+
+    // This method tests multiplyNumbers function by multiplying with one min and one max number.
+    @Test
+    public void testMultiplyNumbers_NegativeInfinity() {
+        int num1 = Integer.MIN_VALUE;
+        double num2 = Double.MAX_VALUE;
+        double expectedOutput = Double.NEGATIVE_INFINITY;
+        double result = javaExample.multiplyNumbers(num1, num2);
+        assertEquals(expectedOutput, result, 0);
+    }
 }
 
 
