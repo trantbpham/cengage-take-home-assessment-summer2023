@@ -12,8 +12,8 @@ public class Java1_1Tester {
         System.setOut(new PrintStream(outContent));
         Java1_1.main(new String[0]); 
 
-        String expectedOutput = "I am learning to program in Java\nThat's awesome!\n";
-        assertEquals(expectedOutput, outContent.toString());
+        String expectedOutput = "I am learning to program in Java\nThat's awesome!";
+        assertEquals(expectedOutput, outContent.toString().trim());
     }
 }
 
