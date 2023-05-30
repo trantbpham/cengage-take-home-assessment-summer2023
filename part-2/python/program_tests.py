@@ -88,7 +88,7 @@ class PatronTests(unittest.TestCase):
 
 class LibraryTests(unittest.TestCase):
     def setUp(self):
-        self.program = None
+        self.program = program_module
 
     def load_module(self, module_name):
         self.program = importlib.import_module(module_name)
