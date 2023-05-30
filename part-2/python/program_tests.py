@@ -2,7 +2,7 @@
 import unittest
 from io import StringIO
 from contextlib import redirect_stdout
-#Dynamically load these modules
+# Dynamically load these modules
 import program_1
 import program_2
 import program_3

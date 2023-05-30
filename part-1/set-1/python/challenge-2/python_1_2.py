@@ -18,3 +18,4 @@ if __name__ == '__main__':
     num2 = float(input("Enter a double: "))
     result = example.multiply_numbers(num1, num2)
     print("The multiplication result is:", result)
+
