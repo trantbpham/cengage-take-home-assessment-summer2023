@@ -8,7 +8,6 @@ class PythonChallenge2Test(unittest.TestCase):
     def setUp(self):
         self.instance = Python_1_2()
         
-        
     def test_print_message(self):
         expected_output = "Testing 1,2,3\n"
         with patch('sys.stdout', new=StringIO()) as mock_stdout:
@@ -22,7 +21,7 @@ class PythonChallenge2Test(unittest.TestCase):
             self.assertEqual(mock_stdout.getvalue(), expected_output)
 
     def test_multiply_numbers(self):
-        # Test multiplication with positive numbers
+        # Test multiplication with positive values
         expected_result = 10
         result = self.instance.multiply_numbers(4, 2.5)
         self.assertEqual(result, expected_result)
@@ -52,11 +51,11 @@ class PythonChallenge2Test(unittest.TestCase):
         result = self.instance.multiply_numbers(float('inf'), float('inf'))
         self.assertEqual(result, expected_result)
 
-    ## Running Script Tests ##
+    ## Script Excecution Tests ##
     # Test script with valid mock inputs.
     @patch('builtins.input')
     @patch('sys.stdout', new_callable=StringIO)
-    def test_script_execution(self, mock_stdout, mock_input):
+    def test_script_valid(self, mock_stdout, mock_input):
         mock_input.side_effect = ["Test message", "4", "2.5"]
 
         script = Python_1_2()
@@ -72,7 +71,7 @@ class PythonChallenge2Test(unittest.TestCase):
         expected_output = "Test message\nThe multiplication result is: 10.0\n"
         self.assertEqual(mock_stdout.getvalue(), expected_output)
         
-    ## Test Divide Numbers with running script.
+    # Test Divide Numbers with running script.
     @patch('builtins.input')
     @patch('sys.stdout', new_callable=StringIO)
     def test_script_divide(self, mock_stdout, mock_input):

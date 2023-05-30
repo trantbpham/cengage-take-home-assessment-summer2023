@@ -1,4 +1,5 @@
 class Employee:
+    # Default parameters which allow keyword arguments to be passed in.
     def __init__(self, name="", age=0, department=""):
         self.name = name
         self.age = age

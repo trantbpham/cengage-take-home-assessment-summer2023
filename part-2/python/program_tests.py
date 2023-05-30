@@ -110,10 +110,10 @@ class LibraryTests(unittest.TestCase):
         self.assertIn(f"'{book1.title}' by {book1.author}", output.getvalue())
         self.assertIn(f"'{book2.title}' by {book2.author}", output.getvalue())
 
-## Excecute Tests for each Program
+## Excecute Tests for each Program in array
 if __name__ == '__main__':
     for program in programs:
-        print(f"\n--- {program.__name__} RESULTS ---") #Print for clear program-test separation
+        print(f"\n--- {program.__name__} RESULTS ---") #Clearly separates each program's test in the output log.
         BookTests.program = program
         PatronTests.program = program
         LibraryTests.program = program

@@ -10,18 +10,11 @@ public class Java1_1Test {
     public void testPrintMessages() {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         PrintStream printStream = new PrintStream(outputStream);
-        PrintStream originalOut = System.out;
 
         System.setOut(printStream);
         Java1_1.main(new String[0]);
-
         System.out.flush();
-        System.setOut(originalOut);
 
-        String programOutput = outputStream.toString();
-
-        String expectedOutput = "I am learning to program in Java\nThat's awesome!\n";
-
-        Assertions.assertEquals(expectedOutput, programOutput);
+        Assertions.assertEquals("I am learning to program in Java\nThat's awesome!\n", outputStream.toString());
     }
 }
