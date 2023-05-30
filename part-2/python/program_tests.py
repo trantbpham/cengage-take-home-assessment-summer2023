@@ -2,7 +2,12 @@
 import unittest
 from io import StringIO
 from contextlib import redirect_stdout
-#Dynamically load these modules
+# Dynamically load these modules
+# Created test files for each of the program files - 1,2,3
+# Created final test Suite to run test all the program files
+# Other way is using for loop to go through each of the program files and run tests against it, but I thought
+# of creating a test suite
+
 import program_1
 import program_2
 import program_3
