@@ -21,7 +21,11 @@ class EmployeeTest(unittest.TestCase):
         self.assertEqual("Sales", emp1.getDepartment())
 
         # Test constructor with department, name, age order
-        emp2 = Employee("Marketing", "Alice", 25)
+        # emp2 = Employee("Marketing", "Alice", 25) -- FAILS -- Due to incorrect arg order.
+        
+        ## In Python, using keyword arguments lets us pass args to a function
+        # or method in a different order than they are defined.
+        emp2 = Employee(department="Marketing", name="Alice", age=25) # PASSES #
 
         # Add assertions to test the constructor with department, name, age order
         self.assertEqual("Alice", emp2.getName())
